@@ -12,6 +12,7 @@ public class EventDTO {
     private String venue;
     private LocalDateTime startAt;
     private LocalDateTime endAt;
+    
     private boolean published;
     private List<TicketTypeDTO> ticketTypes;
 }
