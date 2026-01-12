@@ -7,6 +7,7 @@ import java.io.ByteArrayOutputStream;
 import java.util.Base64;
 
 public class QRGenerator {
+  
   public static String generateQRCodeBase64(String text, int width, int height) throws Exception {
     BitMatrix bitMatrix = new MultiFormatWriter().encode(text, BarcodeFormat.QR_CODE, width, height);
     ByteArrayOutputStream baos = new ByteArrayOutputStream();
